@@ -1,0 +1,23 @@
+# Executa por padrão o ambiente de development ao executar o projeto 
+# Gera um relatorio em html
+# -p => parâmetro
+
+default: -p pretty -p disabled -p html -p chrome -p development
+
+disabled: --publish-quiet
+
+pretty: --format pretty
+
+html: --format html --out=./report/report.html
+
+# Configuraçao de Navegadores que serao executados 
+
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless # navegador em 2 plano quando estiver no pipeline
+
+# Variaveis de ambiente que serao usadas no projeto
+
+development: ENVIRONMENT=development
+production: ENVIRONMENT=production
+

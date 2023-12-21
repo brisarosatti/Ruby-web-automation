@@ -1,0 +1,33 @@
+#language: pt
+
+Funcionalidade: Home
+
+Cenario: Acessar o Menu Sobre
+
+Dado que eu acesse a página Home da consultoria
+Quando clico no Menu <menu_item>
+Então deverei ser redirecionado para a <sessao>
+
+Cenario: Acessar o Menu Serviços
+
+Dado que eu acesse a página Home da consultoria
+Quando clico no Menu <menu_item>
+Então deverei ser redirecionado para a <sessao>
+
+Cenario: Acessar o Menu Conexões
+
+Dado que eu acesse a página Home da consultoria
+Quando clico no Menu <menu_item>
+Então deverei ser redirecionado para a <sessao>
+
+Cenario: Acessar o Menu Reconhecimento
+
+Dado que eu acesse a página Home da consultoria
+Quando clico no Menu <menu_item>
+Então deverei ser redirecionado para a <sessao>
+
+Cenario: Acessar o Menu Fale Conosco
+
+Dado que eu acesse a página Home da consultoria
+Quando clico no Menu <menu_item>
+Então deverei ser redirecionado para a <sessao>
