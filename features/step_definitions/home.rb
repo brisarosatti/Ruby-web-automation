@@ -1,12 +1,12 @@
-
-Dado('que eu acesse a página Home da consultoria') do
-    home.load
+# BDD
+Dado('que eu acesse a página home') do
+    home.load #carrega a pagina principal do Qa coders
   end
   
-  Quando('clico no Menu {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Quando('clico no menu {string}') do |menu_item|
+    home.click_button_menu(menu_item) #Clica em cada um dos itens do Menu
   end
   
-  Então('deverei ser redirecionado para a sessão {string}') do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Então('deverei ser redirecionado para a sessão {string}') do |sessao|
+    home.validation_menu(sessao) #Valida se foi redirecionado para o item do Menu correspondente
   end

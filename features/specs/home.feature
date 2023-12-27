@@ -4,8 +4,8 @@ Funcionalidade: Menu
 
 Esquema do Cenario: Validar o redirecionamento dos links do Menu da página Home
 
-    Dado que eu acesse a página Home da consultoria
-    Quando clico no Menu <menu_item>
+    Dado que eu acesse a página home
+    Quando clico no menu <menu_item>
     Então deverei ser redirecionado para a sessão <sessao>
 
     Exemplos: 
